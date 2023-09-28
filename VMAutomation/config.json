@@ -14,7 +14,8 @@
             "shutdown_command": "echo 'packer' | sudo -S shutdown -P now",
             "boot_command": [
                 "<enter><wait>",
-                "/install.amd/vmlinuz"
+                "/install.amd/vmlinuz",
+                "preseed/url=https://github.com/Danelutzu/Packer/blob/main/VMAutomation/preseed.cfg"
             ]
         }
     ]
