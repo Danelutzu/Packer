@@ -15,7 +15,7 @@
             "boot_command": [
                 "<enter><wait>",
                 "/install.amd/vmlinuz",
-                "preseed/url=https://github.com/Danelutzu/Packer/blob/main/VMAutomation/preseed.cfg"
+                "preseed/url=https://raw.githubusercontent.com/Danelutzu/Packer/main/VMAutomation/preseed.cfg"
             ]
         }
     ]
