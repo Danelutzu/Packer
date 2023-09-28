@@ -16,7 +16,8 @@
                 "<enter><wait>",
                 "/install.amd/vmlinuz",
                 "preseed/url=https://raw.githubusercontent.com/Danelutzu/Packer/main/VMAutomation/preseed.cfg"
-            ]
+            ],
+            "headless":false
         }
     ]
 }
