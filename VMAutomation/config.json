@@ -6,19 +6,18 @@
             "iso_checksum": "9da6ae5b63a72161d0fd4480d0f090b250c4f6bf421474e4776e82eea5cb3143bf8936bf43244e438e74d581797fe87c7193bbefff19414e33932fe787b1400f",
             "iso_url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso",
             "ssh_username": "debian",
-            "ssh_password": "debian",
             "ssh_wait_timeout": "1500s",
             "cpus": 4,
             "memory": 2048,
             "disk_size": 9000,
             "shutdown_command": "echo 'packer' | sudo -S shutdown -P now",
             "boot_command": [
-                "<enter><wait>",
-                "/install.amd/vmlinuz",
+                "<esc><wait>",
+                "auto=true",
                 "preseed/url=https://raw.githubusercontent.com/Danelutzu/Packer/main/VMAutomation/preseed.cfg",
-                "<enter><wait>"
-            ],
-            "headless":false
+                "<enter>"
+            ]
+            
         }
     ]
 }
