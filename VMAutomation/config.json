@@ -13,7 +13,7 @@
             "disk_size": 9000,
             "shutdown_command": "echo 'packer' | sudo -S shutdown -P now",
             "boot_command": [
-                "<esc><wait>",
+                "<enter><wait>",
                 "/install.amd/vmlinuz",
                 "preseed/url=https://raw.githubusercontent.com/Danelutzu/Packer/main/VMAutomation/preseed.cfg",
                 "<enter><wait>"
